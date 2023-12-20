@@ -12,10 +12,9 @@ define('DIR', '/home/rafasantoni.heliohost.us/httpdocs/EMkt/');
 
 /* conexao */
 define('HOST', 'localhost:3306');
-define('USER', 'rafasantoni_conn');
-define('PASS', 'thunder02');
-//define('DB_NAME', 'rafasantoni_emkt');
-define('DB_NAME', 'rafasantoni_emailmkt');
+define('USER', 'conn');
+define('PASS', '');
+define('DB_NAME', 'emailmkt');
 
 /* PASTAS  */
 define('JS', 'js/');
