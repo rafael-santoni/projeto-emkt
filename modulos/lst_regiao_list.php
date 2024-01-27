@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/../includes/config.php';
 
 include_once DIR.INCLUDES.'topo.php';
 include_once DIR.INCLUDES.'menu.html';
@@ -17,7 +17,7 @@ $totalRegioes = $Banco->totalRegistrosTabela("`regiao`","*");
 $totalPaginas = (($totalRegioes % 30) == 0) ? $totalRegioes / 30 : intval($totalRegioes/30)+1 ;
 if (isset($_GET['pag']) || !empty($_GET["pag"])){
 	if ($_GET['pag']>$totalPaginas || !is_numeric($_GET['pag'])){
-        echo '<h2>Erro ao processar</h2>N&atilde;o foi possivel completar a opera&ccedil;&atilde;o. <BR />P&aacute;gina n&atilde;o definida!'; exit();
+        echo '<h2>Erro ao processar</h2>N&atilde;o foi poss&iacute;vel completar a opera&ccedil;&atilde;o. <BR />P&aacute;gina n&atilde;o definida!'; exit();
 	}
     $pagAtual = $_GET['pag'];
 }
@@ -63,9 +63,9 @@ $limiteInicio = ($pagAtual*$limiteTotal)-$limiteTotal;
 									FROM `modules_item` mI, `modules` m
 									WHERE mI.mod_id = m.mod_id") or die (mysql_error());      */
 			//echo 'lista: '; print_r($rsListaEmail);
-            if(mysql_num_rows($rsRegiao)>0):
+            if(mysqli_num_rows($rsRegiao)>0):
 				$i=1;
-				while($row = mysql_fetch_object($rsRegiao)):
+				while($row = mysqli_fetch_object($rsRegiao)):
 					//$cor = ($i % 2 == 0) ? 'class="listra"' : '';
 					$cor = ($i % 2 == 0) ? 'class="listra"' : '';
 	// 				echo '<PRE>';
@@ -95,7 +95,7 @@ $limiteInicio = ($pagAtual*$limiteTotal)-$limiteTotal;
 		?>
 	</table>
 
-	<?php if(mysql_num_rows($rsRegiao)>0){ echo '<input type="submit" value="Excuir" class="btnDel" />';} ?>
+	<?php if(mysqli_num_rows($rsRegiao)>0){ echo '<input type="submit" value="Excuir" class="btnDel" />';} ?>
 	</form>
 
 </div><!--### DIV id="content" ###-->

@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/../includes/config.php';
 
 include_once DIR.INCLUDES.'topo.php';
 include_once DIR.INCLUDES.'menu.html';
@@ -49,7 +49,7 @@ include_once DIR.INCLUDES.'func_jQuery.php';
             <input type="file"   name="imagens[]"  /><br />
         
             <span id="result">
-                <!-- Se for precionado o + aqui é adicionado os campos -->
+                <!-- Se for presionado o +, aqui sÃ£o adicionados os campos -->
             </span>
         </p>
         

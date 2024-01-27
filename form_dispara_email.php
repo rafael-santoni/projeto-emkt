@@ -3,7 +3,9 @@ include_once('classes/db.class.php');
 include_once('classes/Template.class.php');
 
 	$banco = new DB('localhost', 'root', '', 'emailmkt');
-	$banco->DBError();
+    $banco->DBError();
+
+    $lst_tabela = array();
 
     if(isset($_POST["disparar_email"])) {
     	//echo "recebeu os dados do post. <BR><pre>";
@@ -21,7 +23,7 @@ include_once('classes/Template.class.php');
         //print_r($temp);
         $lst_email = array();
         $lst_tabela = array();
-        while($row = mysql_fetch_assoc($banco->resultado)){
+        while($row = mysqli_fetch_assoc($banco->resultado)){
             $lst_email[]=$row;
             $lst_tabela[] = $row;
         }
@@ -41,7 +43,7 @@ include_once('classes/Template.class.php');
             //$tpl->setDados('tratamento',$lst_email[$i]['lst_nome_tratamento']);
             $vTratamento = ((!$lst_email[$i]['lst_nome_tratamento'] == "") ? $lst_email[$i]['lst_nome_tratamento'] : "Caro(a)");
             $tpl->setDados('tratamento',$vTratamento);
-            //$tpl->setDados('nome', ((!$lst_email[$i]['lst_primeiro_nome'] == '') ? $lst_email[$i]['lst_primeiro_nome'] : 'Voc�'));
+            //$tpl->setDados('nome', ((!$lst_email[$i]['lst_primeiro_nome'] == '') ? $lst_email[$i]['lst_primeiro_nome'] : 'Você'));
             $vPrimNome = ((!$lst_email[$i]['lst_primeiro_nome'] == "") ? $lst_email[$i]['lst_primeiro_nome'] : 'morador(a)');
             $tpl->setDados('nome',$vPrimNome);
             
@@ -73,8 +75,8 @@ include_once('classes/Template.class.php');
             	//echo "email enviado com sucesso para ".$vPrimNome." ".$lst_email[$i]['lst_email']."<BR>";
                 $lst_tabela[$i]['status_email'] = "OK";
             else
-            	//echo "<B>n�o</B> foi possivel enviar o email para $vPrimNome" . $lst_email[$i]['lst_email'] . "<BR>";
-                $lst_tabela[$i]['status_email'] = "<font color=red>N�o</font>";
+            	//echo "<B>não</B> foi possivel enviar o email para $vPrimNome" . $lst_email[$i]['lst_email'] . "<BR>";
+                $lst_tabela[$i]['status_email'] = "<font color=red>Não</font>";
     
         }   /*****  END LOOP  *****/
     	
@@ -146,7 +148,7 @@ include_once('classes/Template.class.php');
         </tr>
         <tr>
             <td width="20%" ALIGN="right">
-                <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>N�vel:</strong></font>
+                <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Nível:</strong></font>
             </td>
             <td width="80%">
                 <input type="text" name="email_nivel" id="email_nivel" size="1" maxlength="3" VALUE="97">

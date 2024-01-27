@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/../includes/config.php';
 
 include_once DIR.INCLUDES.'topo.php';
 include_once DIR.INCLUDES.'menu.html';
@@ -17,13 +17,13 @@ ajaxjQuery('index.php', 'action', 'location.href="'.URL.MODULES.'lst_nivel_list.
 ###############################
 
 if (!isset($_GET['lvl']) || empty($_GET["lvl"]) || !is_numeric($_GET["lvl"])){
-	echo '<h2>Erro ao processar</h2>Não foi possivel completar a operação. <BR />N&iacute;vel n&atilde;o definido!'; exit();
+	echo '<h2>Erro ao processar</h2>NÃ£o foi possivel completar a operaÃ§Ã£o. <BR />N&iacute;vel n&atilde;o definido!'; exit();
 	//echo '<script>history.back();</script>';
 }
 
 //$queryStr = "SELECT * FROM `modules` WHERE mod_id=$_GET[module]";
 $Banco->selecionaTabela("`nivel`","`lvl_id` AS ID, `lvl_nome` AS Nome, `lvl_status` AS Status","WHERE lvl_id=$_GET[lvl]");
-$rsNivel = mysql_fetch_object($Banco->resultado);
+$rsNivel = mysqli_fetch_object($Banco->resultado);
 
 if(!$rsNivel){
 	echo "<h2>Erro ao processar!!</h2><BR />Entre em contato com o admin do site."; exit();
@@ -38,7 +38,7 @@ echo $qr; echo mysql_num_rows($qr);
 print_r(mysql_fetch_object($qr));
 if(!$qr){
 //if(mysql_num_rows($qr) <= 0){
-	echo 'Não foi possivel completar a operação.'; exit();
+	echo 'NÃ£o foi possivel completar a operaÃ§Ã£o.'; exit();
 }
 
 $rsModules = mysql_fetch_object($qr);

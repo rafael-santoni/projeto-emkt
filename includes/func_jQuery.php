@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/config.php';
 
 // <script>
 
@@ -46,7 +46,7 @@ function ajaxjQuery($arquivo, $idFocus, $str=null, $idForm='form'){
 		
 				$.post("'.$arquivo.'", $("'.$idForm.'").serialize(),function(ret){
 					
-					alert(ret);
+					//alert(ret);
 					retorno= ret.split("+");
 						
 					classe = (retorno[0] == "sucess") ? "sucess" : "errors";
@@ -195,7 +195,7 @@ function ajaxPopulaLinha(){
                     $.post(\"index.php\", {action: 'populaLinha', idEmail: vID}, function(resposta) {
                        // Limpa a mensagem de carregamento
                        $(\"tr#\"+vSubLinha).empty();
-                       // Coloca as regi�es e n�veis na subLinha
+                       // Coloca as regiões e níveis na subLinha
                        $(\"tr#\"+vSubLinha).append(resposta);
                     });
                     //alterar status do flag linha

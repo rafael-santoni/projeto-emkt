@@ -2,7 +2,7 @@
 include_once('classes/db.class.php');
 
 	$banco = new DB('localhost', 'root', '', 'emailmkt');
-	$banco->DBError();
+		$banco->DBError();
 
     if(isset($_POST["email_enviar"])) {
     	//echo "recebeu os dados do post. <BR>";
@@ -46,7 +46,6 @@ include_once('classes/db.class.php');
 <head>
     <title>Formulário</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <!--   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">   -->
     <link rel="stylesheet" href="CSS/menu.css" type="text/css" />
 </head>
 <body>
@@ -133,7 +132,7 @@ include_once('classes/db.class.php');
     //echo "banco->resultado".$banco->resultado;
     $lst = array();
     $temp=$banco->resultado;
-    while($row = mysql_fetch_assoc($temp)){
+    while($row = mysqli_fetch_assoc($temp)){
         $lst[]=$row;
     }
 //    echo "<pre>";

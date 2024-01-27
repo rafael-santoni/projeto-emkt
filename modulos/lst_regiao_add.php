@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/../includes/config.php';
 
 include_once DIR.INCLUDES.'topo.php';
 include_once DIR.INCLUDES.'menu.html';
@@ -28,16 +28,16 @@ ajaxjQuery('index.php','regiao');
 		</p>
 
 		<p>
-			<label for="nivel">N&iacute;vel da Regi&atilde;o</label>
+			<label for="nivel">N&iacute;vel do Usu&aacute;rio:</label>
 			<select name="nivel" id="nivel">
 				<option value="0"></option>
 				<?php 
-					$Banco->selecionaTabela('nivel','`lvl_id` as ID, `lvl_nome` AS Nome, `lvl_status` as Status','WHERE lvl_status=1');
-                    $rsNivel = $Banco->resultado;
-                    echo "valor do rsNivel ".$rsNivel;
+					$Banco->selecionaTabela("`nivel`","`lvl_id` as ID, `lvl_nome` AS Nome, `lvl_status` as Status","WHERE `lvl_status`=1");
+                    $rsNiveis = $Banco->resultado;
+                    //echo "valor do rsNivel ".$rsNiveis;
                     //$rsMudules = mysql_query("SELECT mod_id, mod_name FROM `modules` WHERE mod_status=1");
-					if(mysql_num_rows($rsNivel)>0):
-						while($row = mysql_fetch_object($rsNivel)):
+					if(mysqli_num_rows($rsNiveis)>0):
+						while($row = mysqli_fetch_object($rsNiveis)):
 						
 							echo '<option value="'.$row->ID.'">'.$row->Nome.'</option>';
 						
@@ -46,7 +46,6 @@ ajaxjQuery('index.php','regiao');
 						echo '<option value="0">Nenhum n&iacute;vel encontrado</option>';
 					endif;
 				?>
-				
 			</select>
 		</p>
 

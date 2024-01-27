@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/../includes/config.php';
 
 $action = '';
 //print_r($_POST); exit();
@@ -14,7 +14,7 @@ if (isset($_GET['action']) && !empty($_GET['action'])) {
 
 /*VERIFICANTO A ACTION*/
 
-if(empty($action)){  // Verifica se usuário forçou entrada ou veio de links externos
+if(empty($action)){  // Verifica se usuÃ¡rio forÃ§ou entrada ou veio de links externos
 	echo '<script>history.back();</script>';
 }
 
@@ -30,13 +30,15 @@ $Banco->DBError();
 
 if($action == "populaLinha"){
     $idEmail = $_POST['idEmail'];
+	$resultRegiao = '';
+	$resultNivel = '';
 
     $Banco->selecionaTabela('`lista_email` AS lst INNER JOIN `email_regiao` AS emreg ON (emreg.`lst_id` = lst.`lst_id`) INNER JOIN `regiao` AS reg ON (emreg.`reg_id` = reg.`reg_id`) INNER JOIN `nivel` AS lvl ON (lvl.`lvl_id`=lst.`lst_nivel`)','lvl.`lvl_id` AS idNivel, lvl.`lvl_nome` AS Nivel, reg.`reg_id` AS idRegiao, reg.`reg_nome` AS Regiao','WHERE lst.`lst_id`='.$idEmail);
     $rsEmailRegiao = $Banco->resultado;
-    if (mysql_num_rows($rsEmailRegiao)==0) {
+    if (mysqli_num_rows($rsEmailRegiao)==0) {
         $resultRegiao = "<li>Nenhuma Regi&atilde;o Encontrada</li>";
     } else {
-        while($row = mysql_fetch_object($rsEmailRegiao)){
+        while($row = mysqli_fetch_object($rsEmailRegiao)){
             $resultRegiao .= "<li>" . $row->Regiao . "</li>";
             //$resultNivel .= "<li>" . $row->Nivel . "</li>";
         }
@@ -44,10 +46,10 @@ if($action == "populaLinha"){
     
     $Banco->selecionaTabela('`lista_email` AS lst INNER JOIN `nivel` AS lvl ON (lvl.`lvl_id`=lst.`lst_nivel`)','lvl.`lvl_id` AS idNivel, lvl.`lvl_nome` AS Nivel','WHERE lst.`lst_id`='.$idEmail);
     $rsEmailNivel = $Banco->resultado;
-    if (mysql_num_rows($rsEmailNivel)==0) {
+    if (mysqli_num_rows($rsEmailNivel)==0) {
         $rsEmailNivel = "<li>Nenhuma N&iacute;vel Encontrado</li>";
     } else {
-        while($row = mysql_fetch_object($rsEmailNivel)){
+        while($row = mysqli_fetch_object($rsEmailNivel)){
             //$resultRegiao .= "<li>" . $row->Regiao . "</li>";
             $resultNivel .= "<li>" . $row->Nivel . "</li>";
         }
@@ -180,7 +182,7 @@ if($action == "saveNivel"){
     } else {
         $Banco->selecionaTabela("`nivel`","`lvl_id`","WHERE `lvl_id`=".$_POST['id']." LIMIT 1");
         //echo "valor de post[id] : ".$_POST['id']." ,  banco-> resultado : ".mysql_num_rows($Banco->resultado);
-        $jaExiste = mysql_num_rows($Banco->resultado);
+        $jaExiste = mysqli_num_rows($Banco->resultado);
         if ($jaExiste){
             $err[] = 'C&oacute;digo j&aacute; existe! Tente novamente.';
         }
@@ -232,7 +234,7 @@ if($action == "updateNivel"){
         if ($_POST['codigo'] != $_POST['lvl_last_id']){
             $Banco->selecionaTabela("`nivel`","`lvl_id`","WHERE `lvl_id`=".$_POST['codigo']." LIMIT 1");
             //echo "valor de post[id] : ".$_POST['id']." ,  banco-> resultado : ".mysql_num_rows($Banco->resultado);
-            $jaExiste = mysql_num_rows($Banco->resultado);
+            $jaExiste = mysqli_num_rows($Banco->resultado);
             if ($jaExiste){
                 $err[] = 'C&oacute;digo j&aacute; existe! Tente novamente.';
             }
@@ -336,7 +338,7 @@ if($action == "saveEmail"){
 	}
 	else{
 		
-        $rsTableStatus = mysql_fetch_array(mysql_query("SHOW TABLE STATUS LIKE 'lista_email'"));
+        $rsTableStatus = mysqli_fetch_array(mysqli_query($Banco->conexao, "SHOW TABLE STATUS LIKE 'lista_email'"));
         $proxId_ListaEmail = $rsTableStatus['Auto_increment'];
         
         $Banco->inserirTabela("`lista_email` (lst_id, lst_email, lst_nome_tratamento, lst_primeiro_nome, lst_nome_meio, lst_sobrenome, lst_sexo, lst_nivel, lst_status)","('','".$_POST['email']."','".$_POST['tratamento']."','".$_POST['primeiroNome']."','".$_POST['nomeMeio']."','".$_POST['sobrenome']."','".$_POST['sexo']."','".$_POST['nivel']."','".$_POST['status']."')");
@@ -561,7 +563,7 @@ if($action == "saveTemplate"){
     } else {
         $Banco->selecionaTabela("`nivel`","`lvl_id`","WHERE `lvl_id`=".$_POST['id']." LIMIT 1");
         //echo "valor de post[id] : ".$_POST['id']." ,  banco-> resultado : ".mysql_num_rows($Banco->resultado);
-        $jaExiste = mysql_num_rows($Banco->resultado);
+        $jaExiste = mysqli_num_rows($Banco->resultado);
         if ($jaExiste){
             $err[] = 'C&oacute;digo j&aacute; existe! Tente novamente.';
         }
@@ -613,7 +615,7 @@ if($action == "updateNivel"){
         if ($_POST['codigo'] != $_POST['lvl_last_id']){
             $Banco->selecionaTabela("`nivel`","`lvl_id`","WHERE `lvl_id`=".$_POST['codigo']." LIMIT 1");
             //echo "valor de post[id] : ".$_POST['id']." ,  banco-> resultado : ".mysql_num_rows($Banco->resultado);
-            $jaExiste = mysql_num_rows($Banco->resultado);
+            $jaExiste = mysqli_num_rows($Banco->resultado);
             if ($jaExiste){
                 $err[] = 'C&oacute;digo j&aacute; existe! Tente novamente.';
             }
@@ -675,11 +677,11 @@ if($action == "saveUsuario"){
 
 	
     if (empty($_POST['loginId'])){
-        $err[] = 'Informe o Login ID de acesso ao sistema do usuário.';
+        $err[] = 'Informe o Login ID de acesso ao sistema do usuÃ¡rio.';
     } else {
         $Banco->selecionaTabela("`usuario`","`usr_login_id`","WHERE `usr_login_id`='".$_POST['loginId']."' LIMIT 1");
         //echo "valor de post[id] : ".$_POST['id']." ,  banco-> resultado : ".mysql_num_rows($Banco->resultado);
-        $jaExiste = mysql_num_rows($Banco->resultado);
+        $jaExiste = mysqli_num_rows($Banco->resultado);
         if ($jaExiste){
             $err[] = 'Login ID de acesso ao sistema j&aacute; existe! Tente novamente.';
         }
@@ -702,7 +704,7 @@ if($action == "saveUsuario"){
     } else {
         $Banco->selecionaTabela("`usuario`","`usr_id`","WHERE `usr_email`='".$_POST['email']."' LIMIT 1");
         //echo "valor de post[id] : ".$_POST['id']." ,  banco-> resultado : ".mysql_num_rows($Banco->resultado);
-        $jaExiste = mysql_num_rows($Banco->resultado);
+        $jaExiste = mysqli_num_rows($Banco->resultado);
         if ($jaExiste){
             $err[] = 'Endere&ccedil;o de Email j&aacute; existe e pertende a outro Usu&aacute;rio! Tente novamente.';
         }
@@ -750,7 +752,7 @@ if($action == "updateUsuario"){
     return;*/
 
 	if (empty($_POST['loginId'])){
-        $err[] = 'Informe o Login ID de acesso ao sistema do usuário.';
+        $err[] = 'Informe o Login ID de acesso ao sistema do usuÃ¡rio.';
     } else {
 //        $Banco->selecionaTabela("`usuario`","`usr_login_id`","WHERE `usr_login_id`='".$_POST['loginId']."' LIMIT 1");
 //        //echo "valor de post[id] : ".$_POST['id']." ,  banco-> resultado : ".mysql_num_rows($Banco->resultado);

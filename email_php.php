@@ -1,4 +1,5 @@
-<?php/*
+<?php
+/*
 $pessoa = 'Teane Araujo';
 
 $to = ' "Teste" <teste@gmail.com>, email@gmx.com';
@@ -41,8 +42,8 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
-$headers .= 'From: "Rafael Santoni" <santoni@pulze.com.br>' . "\r\n";
-$headers .= 'Bcc: rafael@hotmail.com' . "\r\n";
+$headers .= 'From: "Rafael Santoni" <rafael@yahoo.com.br>' . "\r\n";
+$headers .= 'Bcc: rafael.santoni@hotmail.com' . "\r\n";
 
 if (mail($to,$subject,$message,$headers))
 	echo "email enviado com sucesso para $to";

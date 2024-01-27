@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/../includes/config.php';
 
 include_once DIR.INCLUDES.'topo.php';
 include_once DIR.INCLUDES.'menu.html';
@@ -65,10 +65,10 @@ include_once DIR.INCLUDES.'func_jQuery.php';
             <?php
 				$Banco->selecionaTabela("`regiao`","`reg_id` as ID, `reg_nome` AS Nome, `reg_status` as Status","WHERE `reg_status`=1");
                 $rsRegioes = $Banco->resultado;
-                if(mysql_num_rows($rsRegioes)>0):
+                if(mysqli_num_rows($rsRegioes)>0):
                     $count = 0;
 					echo "<pre>";
-                    while($row = mysql_fetch_object($rsRegioes)):
+                    while($row = mysqli_fetch_object($rsRegioes)):
                         if($count==0):
                             echo '<tr>';
                         endif;
@@ -98,8 +98,8 @@ include_once DIR.INCLUDES.'func_jQuery.php';
                     $rsNiveis = $Banco->resultado;
                     //echo "valor do rsNivel ".$rsNiveis;
                     //$rsMudules = mysql_query("SELECT mod_id, mod_name FROM `modules` WHERE mod_status=1");
-					if(mysql_num_rows($rsNiveis)>0):
-						while($row = mysql_fetch_object($rsNiveis)):
+					if(mysqli_num_rows($rsNiveis)>0):
+						while($row = mysqli_fetch_object($rsNiveis)):
 						
 							echo '<option value="'.$row->ID.'">'.$row->Nome.'</option>';
 						

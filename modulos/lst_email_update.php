@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/../includes/config.php';
 
 include_once DIR.INCLUDES.'topo.php';
 include_once DIR.INCLUDES.'menu.html';
@@ -23,7 +23,7 @@ if (!isset($_GET['email']) || empty($_GET["email"]) || !is_numeric($_GET["email"
 
 //$queryStr = "SELECT * FROM `modules` WHERE mod_id=$_GET[module]";
 $Banco->selecionaTabela("lista_email","`lst_id` AS ID, `lst_email` as Email, `lst_nome_tratamento` as Tratamento, `lst_primeiro_nome` AS primeiroNome, `lst_nome_meio` AS nomeMeio, `lst_sobrenome`AS Sobrenome, `lst_sexo` AS Sexo, `lst_nivel` AS Nivel, `lst_status` AS Status","WHERE lst_id=$_GET[email]");
-$rsEmail = mysql_fetch_object($Banco->resultado);
+$rsEmail = mysqli_fetch_object($Banco->resultado);
 
 if(!$rsEmail){
 	echo "<h2>Erro ao processar!!</h2><BR />Entre em contato com o admin do site."; exit();
@@ -36,7 +36,7 @@ if(!$rsEmail){
 ###############################
 
 if (!isset($_GET['regiao']) || empty($_GET["regiao"]) || !is_numeric($_GET["regiao"])){
-	echo '<h2>Erro ao processar</h2>N„o foi possivel completar a operaÁ„o. <BR />Regi&atilde;o n„o definida!'; exit();
+	echo '<h2>Erro ao processar</h2>N√£o foi possivel completar a opera√ß√£o. <BR />Regi&atilde;o n√£o definida!'; exit();
 	//echo '<script>history.back();</script>';
 }
 
@@ -54,13 +54,13 @@ if(!$rsRegiao){
 #############################
 
 if (!isset($_GET['lvl']) || empty($_GET["lvl"]) || !is_numeric($_GET["lvl"])){
-	echo '<h2>Erro ao processar</h2>N&atilde;o foi possivel completar a opera&ccedil;&atilde;o. <BR />N&iacute;vel n„o definido!'; exit();
+	echo '<h2>Erro ao processar</h2>N&atilde;o foi possivel completar a opera&ccedil;&atilde;o. <BR />N&iacute;vel n&atilde;o definido!'; exit();
 	//echo '<script>history.back();</script>';
 }
 
 //$queryStr = "SELECT * FROM `modules_item` WHERE mdi_id=$_GET[item]";
 $Banco->selecionaTabela("`nivel`","`lvl_id` AS ID, `lvl_nome` AS Nome, `lvl_status` AS Status","WHERE lvl_id=$_GET[lvl]");
-$rsNivel = mysql_fetch_object($Banco->resultado);
+$rsNivel = mysqli_fetch_object($Banco->resultado);
 //echo "<script>alert($rsModItens)</script>";
 if(!$rsNivel || $rsNivel->ID != $rsEmail->Nivel){
 	echo "<h2>Erro ao processar!!</h2><BR />Entre em contato com o admin do site."; exit();
@@ -75,7 +75,7 @@ echo $qr; echo mysql_num_rows($qr);
 print_r(mysql_fetch_object($qr));
 if(!$qr){
 //if(mysql_num_rows($qr) <= 0){
-	echo 'N„o foi possivel completar a operaÁ„o.'; exit();
+	echo 'N√£o foi possivel completar a opera√ß√£o.'; exit();
 }
 
 $rsModules = mysql_fetch_object($qr);
@@ -134,19 +134,19 @@ echo (!$rsModules) ? "<h2>Erro ao processar!!</h2><BR />Entre em contato com o a
                 $Banco->selecionaTabela('`lista_email` AS lst INNER JOIN `email_regiao` AS emreg ON (emreg.`lst_id` = lst.`lst_id`) INNER JOIN `regiao` AS reg ON (emreg.`reg_id` = reg.`reg_id`) INNER JOIN `nivel` AS lvl ON (lvl.`lvl_id`=lst.`lst_nivel`)','lvl.`lvl_id` AS idNivel, lvl.`lvl_nome` AS Nivel, reg.`reg_id` AS idRegiao, reg.`reg_nome` AS Regiao','WHERE lst.`lst_id`='.$_GET['email']);
                 $rsEmailRegiao = $Banco->resultado;
                 
-                if (mysql_num_rows($rsEmailRegiao)==0) {
+                if (mysqli_num_rows($rsEmailRegiao)==0) {
                     //$resultRegiao = "<li>Nenhuma Regi&atilde;o Encontrada</li>";
                 } else {
-                    while($row = mysql_fetch_object($rsEmailRegiao)){
+                    while($row = mysqli_fetch_object($rsEmailRegiao)){
                         $arrEmRe[]= $row->idRegiao;
                         //$resultRegiao .= "<li>" . $row->Regiao . "</li>";
                         //$resultNivel .= "<li>" . $row->Nivel . "</li>";
                     }
                 }
                 
-                if(mysql_num_rows($rsRegioes)>0):
+                if(mysqli_num_rows($rsRegioes)>0):
                     $count = 0;echo "<pre>";
-                    while($row = mysql_fetch_object($rsRegioes)):
+                    while($row = mysqli_fetch_object($rsRegioes)):
                         $vDisabled = "";
                         $vChecked = "";
                         $vInativo = "";
@@ -194,8 +194,8 @@ echo (!$rsModules) ? "<h2>Erro ao processar!!</h2><BR />Entre em contato com o a
 				//$rsModules2 = mysql_query("SELECT * FROM `modules` WHERE mod_id<>$_GET[module]") or die("Erro na base de dados: ".mysql_error());
 				$Banco->selecionaTabela("`nivel`","`lvl_id` AS ID, `lvl_nome` AS Nome, `lvl_status` AS Status","WHERE lvl_id<>$_GET[lvl]");
                 $rsNiveis2 = $Banco->resultado;
-                if(mysql_num_rows($rsNiveis2)>0):
-					while($row = mysql_fetch_object($rsNiveis2)):
+                if(mysqli_num_rows($rsNiveis2)>0):
+					while($row = mysqli_fetch_object($rsNiveis2)):
 						echo '<option value="'.$row->ID.'">'.$row->Nome.'</option>';
 					endwhile;
 				endif;

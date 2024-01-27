@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/../includes/config.php';
 
 include_once DIR.INCLUDES.'topo.php';
 include_once DIR.INCLUDES.'menu.html';
@@ -68,9 +68,9 @@ $limiteInicio = ($pagAtual*$limiteTotal)-$limiteTotal;
 									FROM `modules_item` mI, `modules` m
 									WHERE mI.mod_id = m.mod_id") or die (mysql_error());      */
 			//echo 'lista: '; print_r($rsUsuarios);
-            if(mysql_num_rows($rsUsuarios)>0):
+            if(mysqli_num_rows($rsUsuarios)>0):
 				$i=1;
-				while($row = mysql_fetch_object($rsUsuarios)):
+				while($row = mysqli_fetch_object($rsUsuarios)):
 					//$cor = ($i % 2 == 0) ? 'class="listra"' : '';
 					$cor = ($i % 2 == 0) ? 'class="listra"' : '';
 	// 				echo '<PRE>';
@@ -108,7 +108,7 @@ $limiteInicio = ($pagAtual*$limiteTotal)-$limiteTotal;
 		?>
 	</table>
 
-	<?php if(mysql_num_rows($rsUsuarios)>0){ echo '<input type="submit" value="Excuir" class="btnDel" />';} ?>
+	<?php if(mysqli_num_rows($rsUsuarios)>0){ echo '<input type="submit" value="Excuir" class="btnDel" />';} ?>
 	</form>
 
 </div><!--### DIV id="content" ###-->

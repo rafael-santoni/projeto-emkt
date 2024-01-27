@@ -409,7 +409,7 @@ a:visited, span.MsoHyperlinkFollowed
 p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
 	{mso-style-noshow:yes;
 	mso-style-priority:99;
-	mso-style-link:"Texto de balão Char";
+	mso-style-link:"Texto de balï¿½o Char";
 	margin:0cm;
 	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
@@ -422,12 +422,12 @@ span.apple-converted-space
 	{mso-style-name:apple-converted-space;
 	mso-style-unhide:no;}
 span.TextodebaloChar
-	{mso-style-name:"Texto de balão Char";
+	{mso-style-name:"Texto de balï¿½o Char";
 	mso-style-noshow:yes;
 	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-style-locked:yes;
-	mso-style-link:"Texto de balão";
+	mso-style-link:"Texto de balï¿½o";
 	mso-ansi-font-size:8.0pt;
 	mso-bidi-font-size:8.0pt;
 	font-family:"Tahoma","sans-serif";
@@ -539,8 +539,8 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 <p class=MsoNormal align=center style='margin-bottom:5.0pt;text-align:center;
 line-height:17.05pt;background:white'><b><span style='font-size:12.0pt;
 font-family:"Helvetica","sans-serif";mso-fareast-font-family:"Times New Roman";
-color:#444444;mso-fareast-language:PT-BR'>Já pensou em morar em um ótimo
-empreendimento com localização excepcional e uma vista incrível?</span></b><span
+color:#444444;mso-fareast-language:PT-BR'>Jï¿½ pensou em morar em um ï¿½timo
+empreendimento com localizaï¿½ï¿½o excepcional e uma vista incrï¿½vel?</span></b><span
 style='font-size:12.0pt;font-family:"Tahoma","sans-serif";mso-fareast-font-family:
 "Times New Roman";color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 
@@ -569,7 +569,7 @@ text-align:center;line-height:15.95pt;background:white'><span style='font-size:
 11.5pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
 mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
 color:#444444;mso-fareast-language:PT-BR'>-<span class=GramE> &nbsp;</span>IMAGEM
-ILUSTRATIVA COM FOTO DA VISTA APROXIMADA DO 15º ANDAR, TIRADA EM 25/03/2014<o:p></o:p></span></p>
+ILUSTRATIVA COM FOTO DA VISTA APROXIMADA DO 15ï¿½ ANDAR, TIRADA EM 25/03/2014<o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
 text-align:center;line-height:15.95pt;background:white'><span style='font-size:
@@ -603,7 +603,7 @@ color:#444444;mso-fareast-language:PT-BR'></span></p>
 text-align:center;line-height:15.95pt;background:white'><span style='font-size:
 11.5pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
 mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
-color:#444444;mso-fareast-language:PT-BR'>AMPLA ÁREA DE LAZER</span></p>
+color:#444444;mso-fareast-language:PT-BR'>AMPLA ï¿½REA DE LAZER</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -628,7 +628,7 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DO PLAYGROUND<o:p></o:p></span></p>
+&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DO PLAYGROUND<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -653,7 +653,7 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;&nbsp;&nbsp;
--<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DA BRINQUEDOTECA<o:p></o:p></span></p>
+-<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DA BRINQUEDOTECA<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -678,7 +678,7 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -&nbsp;ILUSTRAÇÃO ARTÍSTICA DA QUADRA ESPORTIVA<o:p></o:p></span></p>
+&nbsp; -&nbsp;ILUSTRAï¿½ï¿½O ARTï¿½STICA DA QUADRA ESPORTIVA<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -778,7 +778,7 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;&nbsp;&nbsp;
--<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DA CHURRASQUEIRA E FORNO
+-<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DA CHURRASQUEIRA E FORNO
 DE PIZZA<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
@@ -791,8 +791,8 @@ mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'
  <v:imagedata src="[$IMG_URL]/[$tpl_name]/image011.jpg" o:title="terrazzo-limeira-residencial-ilustracao-artistica-da-piscina-com-raia-de-25"/>
 </v:shape><![endif]--><![if !vml]><img width=592 height=420
 src="[$IMG_URL]/[$tpl_name]/image011.jpg" v:shapes="Imagem_x0020_16"><![endif]></span><br>
-&nbsp; &nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DA PISCINA
-COM RAIA DE 25²<o:p></o:p></span></p>
+&nbsp; &nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DA PISCINA
+COM RAIA DE 25ï¿½<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -817,13 +817,13 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DA PORTARIA&nbsp;<o:p></o:p></span></p>
+&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DA PORTARIA&nbsp;<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>(COM
-VIDROS BLINDADOS NA GUARITA E &quot;PULMÃO&quot; DE SEGURANÇA)<o:p></o:p></span></p>
+VIDROS BLINDADOS NA GUARITA E &quot;PULMï¿½O&quot; DE SEGURANï¿½A)<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -848,7 +848,7 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DO HALL DE ENTRADA<o:p></o:p></span></p>
+&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DO HALL DE ENTRADA<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -873,14 +873,14 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DA PRAÇA DA
+&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DA PRAï¿½A DA
 FONTE&nbsp;<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E ALAMEDA YPÊS ROXOS<o:p></o:p></span></p>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E ALAMEDA YPï¿½S ROXOS<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -892,8 +892,8 @@ mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'
  <v:imagedata src="[$IMG_URL]/[$tpl_name]/image017.jpg" o:title="terrazzo-limeira-residencial-ilustracao-artistica-da-praca-do-jacarandas"/>
 </v:shape><![endif]--><![if !vml]><img width=592 height=420
 src="[$IMG_URL]/[$tpl_name]/image017.jpg" v:shapes="Imagem_x0020_20"><![endif]></span><br>
-&nbsp; &nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DA PRAÇA DO
-JACARANDÁS<o:p></o:p></span></p>
+&nbsp; &nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DA PRAï¿½A DO
+JACARANDï¿½S<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -916,7 +916,7 @@ style='font-size:12.0pt;font-family:"Helvetica","sans-serif";mso-fareast-font-fa
 15.95pt;background:white'><b><span style='font-size:24.0pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>APTOS.
-DE<span class=GramE> &nbsp;</span>67M²</span></b><span style='font-size:11.5pt;
+DE<span class=GramE> &nbsp;</span>67Mï¿½</span></b><span style='font-size:11.5pt;
 mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
 mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
 color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
@@ -944,7 +944,7 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>2 DORMS (1 SUÍTE COM CLOSET E VARANDA
+&nbsp; -<span class=GramE> &nbsp;</span>2 DORMS (1 SUï¿½TE COM CLOSET E VARANDA
 GOURMET)<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
@@ -970,8 +970,8 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DO TERRAÇO GRILL
-DO APTO. DE 67M<span class=GramE>²</span><o:p></o:p></span></p>
+&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DO TERRAï¿½O GRILL
+DO APTO. DE 67M<span class=GramE>ï¿½</span><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -996,8 +996,8 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DO LIVING DO APTO.
-DE 67M²<o:p></o:p></span></p>
+&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DO LIVING DO APTO.
+DE 67Mï¿½<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -1013,7 +1013,7 @@ mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'
 15.95pt;background:white'><b><span style='font-size:24.0pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>APTOS.
-DE<span class=GramE> &nbsp;</span>88M²</span></b><span style='font-size:11.5pt;
+DE<span class=GramE> &nbsp;</span>88Mï¿½</span></b><span style='font-size:11.5pt;
 mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
 mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
 color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
@@ -1041,8 +1041,8 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>2 DORMS - OPÇÃO LIVING AMPLIADO (1
-SUÍTE COM CLOSET E VARANDA GOURMET)<o:p></o:p></span></p>
+&nbsp; -<span class=GramE> &nbsp;</span>2 DORMS - OPï¿½ï¿½O LIVING AMPLIADO (1
+SUï¿½TE COM CLOSET E VARANDA GOURMET)<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -1067,8 +1067,8 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DO LIVING AMPLIADO
-DO APTO. DE 88M<span class=GramE>²</span><o:p></o:p></span></p>
+&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DO LIVING AMPLIADO
+DO APTO. DE 88M<span class=GramE>ï¿½</span><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -1093,8 +1093,8 @@ color:#444444;mso-fareast-language:PT-BR'><o:p></o:p></span></p>
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
 Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
 mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'>&nbsp;
-&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAÇÃO ARTÍSTICA DO TERRAÇO GOURMET
-DO APTO. DE 88M²</span></p>
+&nbsp; -<span class=GramE> &nbsp;</span>ILUSTRAï¿½ï¿½O ARTï¿½STICA DO TERRAï¿½O GOURMET
+DO APTO. DE 88Mï¿½</span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -1119,7 +1119,7 @@ PT-BR'>Consultor Imibili&aacute;rio</span></p>
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 17.05pt;background:white'><span style='font-size:12.0pt;font-family:"Tahoma","sans-serif";
 mso-fareast-font-family:"Times New Roman";color:#444444;mso-fareast-language:
-PT-BR'>CRECI: 153914-F<o:p></o:p></span></p>
+PT-BR'>CRECI: 999999-F<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:11.5pt;mso-ascii-font-family:
@@ -1129,7 +1129,7 @@ mso-bidi-font-family:"Times New Roman";color:#444444;mso-fareast-language:PT-BR'
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
 15.95pt;background:white'><span style='font-size:12.0pt;font-family:"Tahoma","sans-serif";
 mso-fareast-font-family:"Times New Roman";color:#444444;mso-fareast-language:
-PT-BR'>(19) 99208-3160&nbsp;</span></p>
+PT-BR'>(19) 99999-9999&nbsp;</span></p>
 
 
 
@@ -1143,7 +1143,7 @@ style='color:#0068CF'>www.pulze.com.br</span></a><o:p></o:p></span></p>
 
 </div>
 
-<font size=1>Email enviado automaticamente pelo <a href="mailto:facetas81@gmail.com">E-Mkt Sender 1.0</a> by RafaSantoni Web Consulting.</font>
+<font size=1>Email enviado automaticamente pelo <a href="mailto:email@gmail.com">E-Mkt Sender 1.0</a> by RafaSantoni Web Consulting.</font>
 </body>
 
 </html>

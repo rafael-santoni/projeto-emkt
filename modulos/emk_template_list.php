@@ -1,5 +1,5 @@
 <?php
-include_once '/home/rafasan/public_html/EMkt/includes/config.php';
+include_once __DIR__.'/../includes/config.php';
 
 include_once DIR.INCLUDES.'topo.php';
 include_once DIR.INCLUDES.'menu.html';
@@ -51,9 +51,9 @@ $limiteInicio = ($pagAtual*$limiteTotal)-$limiteTotal;
 			$Banco->selecionaTabela("`template` AS tpl","tpl.`tpl_id` AS ID, tpl.`tpl_nome`AS Nome, tpl.`tpl_arquivo` AS nomeArquivo, tpl.`tpl_img_url` AS urlImagem, tpl.`tpl_msg_padrao` AS mensagemPadrao, tpl.`tpl_status` AS Status","WHERE 27=27 LIMIT $limiteInicio,$limiteTotal");
             $rsListaTemplate = $Banco->resultado; 
             
-            if(mysql_num_rows($rsListaTemplate)>0):
+            if(mysqli_num_rows($rsListaTemplate)>0):
 				$i=1;
-				while($row = mysql_fetch_object($rsListaTemplate)):
+				while($row = mysqli_fetch_object($rsListaTemplate)):
 					//$cor = ($i % 2 == 0) ? 'class="listra"' : '';
 					$cor = ($i % 2 == 0) ? 'class="listra"' : '';
 	   ?>
@@ -85,7 +85,7 @@ $limiteInicio = ($pagAtual*$limiteTotal)-$limiteTotal;
 		?>
 	</table>
 
-	<?php if(mysql_num_rows($rsListaTemplate)>0){ echo '<input type="submit" value="Excuir" class="btnDel" />';} ?>
+	<?php if(mysqli_num_rows($rsListaTemplate)>0){ echo '<input type="submit" value="Excuir" class="btnDel" />';} ?>
 	</form>
 
 </div><!--### DIV id="content" ###-->

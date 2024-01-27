@@ -4,13 +4,13 @@ include_once('classes/Template.class.php');
 include_once('classes/Email.class.php');
     
     $banco = new DB('localhost', 'root', '', 'emailmkt');
-	$banco->DBError();
+		$banco->DBError();
  
     $banco->selecionaTabela('lista_email', '`lst_email`, `lst_nome_tratamento`,`lst_primeiro_nome`,`lst_sobrenome`',"WHERE `lst_status`=1 AND `lst_nivel`=1");
     //echo $banco->resultado;    
 
     $lst_email = array();
-    while($row = mysql_fetch_assoc($banco->resultado)){
+    while($row = mysqli_fetch_assoc($banco->resultado)){
         $lst_email[]=$row;
     }
 
@@ -44,13 +44,13 @@ include_once('classes/Email.class.php');
             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
             
             // More headers
-            $headers .= 'From: "Rafael Santoni" <santoni@pulze.com.br>' . "\r\n";
-            $headers .= 'Bcc: rafael.pulze@hotmail.com' . "\r\n";
+            $headers .= 'From: "Rafael Santoni" <rafael@yahoo.com.br>' . "\r\n";
+            $headers .= 'Bcc: rafael.santoni@hotmail.com' . "\r\n";
             
             if (mail($to,$subject,$msg,$headers))
             	echo "email enviado com sucesso para ".$to." <BR>";
             else
-            	echo "<B>n�o<B> foi possivel enviar o email para ".$to."<BR>";
+            	echo "<B>não<B> foi possivel enviar o email para ".$to."<BR>";
         //}
 
     }
