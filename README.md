@@ -27,5 +27,10 @@ Este projeto dispara e-mails em massa para uma lista de e-mails cadastrados no b
 
 # ATENÇÃO: ESTE É UM PROJETO LEGADO 
 ## PROGRAMAS E VERSÕES UTILIDADAS
+>  Versão 1.0
  - PHP versão 5.4.7 ou inferior
  - MySQL v4.0
+
+> Versão 1.5
+ - PHP versão 8.0.29 ou inferior
+ - MySQL v8.0 Community Version
